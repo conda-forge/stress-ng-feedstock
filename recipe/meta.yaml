@@ -1,13 +1,13 @@
 {% set name = "stress-ng" %}
-{% set version = "0.12.04" %}
+{% set version = "0.12.05" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://github.com/ColinIanKing/stress-ng/archive/V{{ version }}.tar.gz"
-  sha256: b251e7af1559891e9263653481fcae318ba17d3527b0d526ebd63c709c4722d2
+  url: https://github.com/ColinIanKing/stress-ng/archive/V{{ version }}.tar.gz
+  sha256: e0a880cd9bd8172bed354976fcc21961e9a1c719d01b81f4117aeea81ad9e044
 
 build:
   number: 0
@@ -32,7 +32,7 @@ about:
   license: GPL-2.0-or-later
   license_family: GPL
   license_file: COPYING
-  summary: 'stress test a computer system in various selectable ways'
+  summary: stress test a computer system in various selectable ways
   description: |
     stress-ng will stress test a computer system in various selectable ways. It was designed to exercise various physical subsystems of a computer as well as the various operating system kernel interfaces.
   doc_url: https://wiki.ubuntu.com/Kernel/Reference/stress-ng
