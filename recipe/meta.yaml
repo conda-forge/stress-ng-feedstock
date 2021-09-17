@@ -1,5 +1,5 @@
 {% set name = "stress-ng" %}
-{% set version = "0.13.01" %}
+{% set version = "0.13.03" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/ColinIanKing/stress-ng/archive/V{{ version }}.tar.gz
-  sha256: 1973b142b9b731952dd4ce77c3618a7e3c62494587e23bf37c8683503d048f68
+  sha256: 14c8a16deccb686267d81265e6a45728d2c461b5f25c5803626c8420bf0a17d8
 
 build:
   number: 0
