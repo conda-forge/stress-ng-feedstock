@@ -22,6 +22,7 @@ requirements:
     - make
   host:
     - zlib
+    - libxcrypt
 
 test:
   commands:
